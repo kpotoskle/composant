@@ -1,3 +1,4 @@
+import 'package:composant/Authentification.dart';
 import 'package:composant/exemple1.dart';
 import 'package:composant/exemple2.dart';
 import 'package:composant/exemple3.dart';
@@ -16,10 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Exemple3(),
+      home: const Authentification(),
     );
   }
 }
