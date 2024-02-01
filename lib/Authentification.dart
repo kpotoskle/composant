@@ -10,19 +10,22 @@ class Authentification extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: double.infinity,
         decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
           Colors.blueAccent,
           Colors.blue,
           Colors.lightBlueAccent
         ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
-        child: Column(
-          children: [
-            showLogo(),
-            SizedBox(height: 20,),
-            logText(),
-            showFormualire()
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              showLogo(),
+              SizedBox(height: 20,),
+              logText(),
+              showFormualire()
+            ],
+          ),
         ),
       ),
     );
